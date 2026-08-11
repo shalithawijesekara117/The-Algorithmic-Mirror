@@ -1,0 +1,658 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f3f9fb;
+
+    color: #263746;
+
+    min-height: 100vh;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top-section {
+    width: 1150px;
+    max-width: calc(100% - 50px);
+
+    margin: 0 auto;
+
+    padding-top: 50px;
+}
+
+.wireframe {
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 14px;
+
+    color: #7da4b8;
+
+    margin-bottom: 12px;
+}
+
+
+
+.top-section h1 {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #294052;
+
+    margin-bottom: 10px;
+}
+
+
+/* description */
+
+.description {
+    width: 700px;
+
+    max-width: 100%;
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #7894a4;
+}
+
+
+/* =========================================
+   STEPS
+========================================= */
+
+.steps {
+    display: flex;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    width: fit-content;
+}
+
+
+/* step button */
+
+.step {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    height: 35px;
+
+    padding: 0 13px;
+
+    border-radius: 20px;
+
+    border: 1px dashed #b7c9d2;
+
+    background: #ffffff;
+
+    color: #7893a3;
+
+    font-family: Georgia, serif;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+/* number circle */
+
+.step span {
+    width: 21px;
+
+    height: 21px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #e7f0f4;
+
+    color: #7893a3;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* active step */
+
+.step.active {
+    background: #39464e;
+
+    color: white;
+
+    border-color: #39464e;
+}
+
+.step.active span {
+    background: white;
+
+    color: #39464e;
+}
+
+
+/* hover */
+
+.step:hover {
+    transform: translateY(-1px);
+}
+
+
+/* connector */
+
+.connector {
+    width: 25px;
+
+    height: 1px;
+
+    background: #c6d5dc;
+}
+
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+.progress-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.progress-bar {
+    width: 100%;
+
+    height: 6px;
+
+    background: #dce8ed;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progress-fill {
+    width: 16.66%;
+
+    height: 100%;
+
+    background: #82c0dc;
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+
+.step-counter {
+    min-width: 72px;
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 12px;
+
+    color: #6e8b9b;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.content {
+    width: 1150px;
+
+    max-width: calc(100% - 50px);
+
+    margin: 65px auto 0;
+}
+
+
+/* section title */
+
+.section-title {
+    width: 420px;
+
+    margin-left: 355px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.section-title span {
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    color: #68899a;
+
+    font-size: 13px;
+}
+
+
+.section-title strong {
+    color: #263c4b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+    position: relative;
+
+    width: 350px;
+
+    min-height: 570px;
+
+    margin-left: 355px;
+
+    background: #ffffff;
+
+    border: 2px dashed #b8cad3;
+
+    border-radius: 28px;
+
+    padding: 22px 20px;
+
+    box-shadow:
+        0 2px 8px rgba(44, 67, 79, 0.04);
+}
+
+
+/* =========================================
+   DECORATIVE LINE
+========================================= */
+
+.card-line {
+    width: 62px;
+
+    height: 5px;
+
+    background: #e3ebef;
+
+    border-radius: 10px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* =========================================
+   LOGIN CONTENT
+========================================= */
+
+.login-content {
+    padding-top: 72px;
+}
+
+
+.login-content h2 {
+    text-align: center;
+
+    font-size: 17px;
+
+    color: #253c4b;
+
+    margin-bottom: 10px;
+}
+
+/* welcome */
+
+.welcome {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #7895a5;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.form-group {
+    margin-bottom: 13px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    color: #7995a5;
+
+    margin-bottom: 6px;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    height: 36px;
+
+    padding: 0 12px;
+
+    border: 1px dashed #b8cad3;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    font-size: 12px;
+
+    color: #344a58;
+
+    transition: 0.2s ease;
+}
+
+
+.form-group input::placeholder {
+    color: #9aafba;
+}
+
+
+.form-group input:focus {
+    border-color: #83bcd4;
+
+    box-shadow:
+        0 0 0 3px rgba(131, 188, 212, 0.10);
+}
+
+
+/* =========================================
+   SMALL LINE
+========================================= */
+
+.small-line {
+    width: 107px;
+
+    height: 5px;
+
+    background: #e1eaee;
+
+    border-radius: 10px;
+
+    margin: 12px 0 12px auto;
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+.login-button {
+    width: 100%;
+
+    height: 39px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #39464e;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.login-button:hover {
+    background: #2d3941;
+
+    transform: translateY(-1px);
+}
+
+
+.login-button:active {
+    transform: translateY(0);
+}
+
+.register-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-text a {
+    color: #7895a5;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   OR DIVIDER
+========================================= */
+
+.or-divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 17px 0;
+}
+
+
+.or-divider div {
+    flex: 1;
+
+    height: 1px;
+
+    background: #c9d8df;
+}
+
+
+.or-divider span {
+    font-family: Georgia, serif;
+
+    font-size: 10px;
+
+    color: #819aa8;
+}
+
+
+/* =========================================
+   GOOGLE BUTTON
+========================================= */
+
+.google-button {
+    width: 100%;
+
+    height: 39px;
+
+    background: white;
+
+    border: 1px dashed #b8cad3;
+
+    border-radius: 9px;
+
+    color: #354b59;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.google-button:hover {
+    background: #f7fafb;
+
+    border-color: #8eabb9;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.message {
+    text-align: center;
+
+    font-size: 11px;
+
+    margin-top: 15px;
+
+    min-height: 15px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .top-section,
+    .content {
+        width: calc(100% - 40px);
+    }
+
+
+    .steps {
+        flex-wrap: wrap;
+
+        gap: 7px;
+    }
+
+
+    .connector {
+        display: none;
+    }
+
+
+    .progress-area {
+        margin-top: 18px;
+    }
+
+
+    .content {
+        margin-top: 45px;
+    }
+
+
+    .section-title {
+        margin-left: 0;
+
+        width: 350px;
+
+        max-width: 100%;
+
+        margin-right: auto;
+
+        margin-left: auto;
+    }
+
+
+    .login-card {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .top-section {
+        padding-top: 30px;
+    }
+
+
+    .top-section h1 {
+        font-size: 25px;
+    }
+
+
+    .description {
+        font-size: 13px;
+    }
+
+
+    .step {
+        font-size: 11px;
+
+        padding: 0 9px;
+    }
+
+
+    .login-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+
+    .sticky-note {
+        width: 165px;
+
+        right: 8px;
+    }
+}
+
+
